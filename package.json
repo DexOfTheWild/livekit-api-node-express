@@ -1,0 +1,26 @@
+{
+  "name": "livekit-token-api",
+  "version": "1.0.0",
+  "description": "Lightweight LiveKit token API for browser clients",
+  "main": "src/server.js",
+  "scripts": {
+    "stack": "node ./bin/voice-stack.js",
+    "test": "node --test",
+    "start": "node --env-file=.env src/server.js",
+    "dev": "node --env-file=.env --watch src/server.js"
+  },
+  "bin": {
+    "livekit-app": "./bin/voice-stack.js",
+    "voice-stack": "./bin/voice-stack.js"
+  },
+  "license": "ISC",
+  "private": true,
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "livekit-server-sdk": "^2.15.1"
+  }
+}
